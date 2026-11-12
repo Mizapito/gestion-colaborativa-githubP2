@@ -1,3 +1,69 @@
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+.perfil-hero {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.perfil-hero h1 {
+  margin: 0 0 8px 0;
+  font-size: 1.8rem;
+  color: #1e293b;
+}
+
+.perfil-hero h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #475569;
+}
+
+header {
+  background-color: #1e293b;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar .nav-links li {
+  margin: 0;
+}
+
+.navbar .nav-links a {
+  display: block;
+  color: #f8fafc;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a:focus-visible {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
 #sobre-mi {
   display: flex;
   flex-direction: column;
@@ -109,4 +175,69 @@ footer .footer-links a:focus-visible {
   background-color: #38bdf8;
   border-color: #38bdf8;
   text-decoration: none;
+}
+
+.seccion-intereses,
+.seccion-enlaces {
+  padding: 20px;
+  margin: 20px 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.seccion-intereses h2,
+.seccion-enlaces h2 {
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+/* Cuadrícula para los intereses en forma de tarjetas */
+.intereses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.interes-card {
+  background-color: #ffffff;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #38bdf8;
+  padding: 15px 20px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.enlaces-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.enlace-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #38bdf8;
+  padding: 15px 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  max-width: 550px;
+}
+
+.enlace-card p {
+  margin: 0;
+  color: #475569;
+}
+
+.enlace-card a {
+  color: #0284c7;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.enlace-card a:hover {
+  color: #0369a1;
+  text-decoration: underline;
 }
