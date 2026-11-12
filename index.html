@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,21 @@
 </head>
 <body>
 
-  <h1><strong>Nombre: </strong> Victor Núñez</h1>
-  <h3><strong>Carrera: </strong> Ingeniero en Software | Desarrollador Web</h3>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#estudios">Estudios</a></li>
+        <li><a href="#intereses">Intereses</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="perfil-hero">
+    <h1><strong>Nombre:</strong> Victor Núñez</h1>
+    <h3><strong>Carrera:</strong> Ingeniero en Software | Desarrollador Web</h3>
+  </div>
 
   <section id="sobre-mi">
       <img src="./imagenes/perfil.jpeg" alt="Fotografía de perfil" width="250" height="250">
@@ -38,26 +51,33 @@
         <p><strong>Objetivo:</strong> Sentar las bases del pensamiento lógico, analítico y el aprendizaje continuo orientado hacia la tecnología.</p>
       </article>
   </section>
-  <h2>Intereses y áreas de especialización</h2>
-  <br>
-    Desarrollo web<br>
-    Bases de datos<br>
-    Análisis de datos<br>
-    Inteligencia artificial<br>
-    
   
+  <section id="intereses" class="seccion-intereses">
+    <h2>Intereses y áreas de especialización</h2>
+    <div class="intereses-grid">
+      <div class="interes-card">Desarrollo web</div>
+      <div class="interes-card">Bases de datos</div>
+      <div class="interes-card">Análisis de datos</div>
+      <div class="interes-card">Inteligencia artificial</div>
+    </div>
+  </section>
 
-  
-
-  <h2>Enlaces de interés</h2>
-  
-    <p>- Tutoriales de programació: <a href="https://www.w3schools.com" target="_blank">W3Schools</a> </p> 
+  <section class="seccion-enlaces">
+    <h2>Enlaces de interés</h2>
+    <div class="enlaces-grid">
+      <article class="enlace-card">
+        <p><strong>Tutoriales de programación:</strong> <a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3Schools</a></p>
+      </article>
+      <article class="enlace-card">
+        <p><strong>IA para aprendizaje:</strong> <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">Gemini</a></p>
+      </article>
+      <article class="enlace-card">
+        <p><strong>Repositorios y proyectos:</strong> <a href="https://github.com" target="_blank" rel="noopener noreferrer">Github</a></p>
+      </article>
+    </div>
+  </section>
     
-    <p>- IA para aprendizaje: <a href="https://gemini.google.com" target="_blank">Gemini</a> </p> 
-    
-    <p>- Repositorios y proyectos: <a href="https://github.com" target="_blank">Github</a> </p>
-    
-  <footer>
+  <footer id="contacto">
     <p class="footer-copyright">© 2026 Víctor Núñez - Ingeniero en Software</p>
     <ul class="footer-links">
       <li><a href="mailto:vanunez5@espe.edu.ec">Correo electrónico</a></li>
@@ -65,8 +85,5 @@
       <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
     </ul>
   </footer>
-
-  
-
 </body>
 </html>
